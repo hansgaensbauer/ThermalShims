@@ -1,0 +1,1098 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "ce409456-7d46-40df-b4ef-948ad9d6e613")
+	(paper "A4")
+	(lib_symbols)
+	(junction
+		(at 148.59 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5705121d-fbfc-4662-b417-3928d4eeff08")
+	)
+	(junction
+		(at 113.03 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6dff0db5-10e6-4fe8-bb3f-5eef872a9d0f")
+	)
+	(junction
+		(at 135.89 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7bf72571-41ef-4887-a25d-1593a2e39edd")
+	)
+	(junction
+		(at 142.24 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8420028c-5e2c-40b9-9be3-57d40d9d70c4")
+	)
+	(junction
+		(at 137.16 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d8d4d5aa-fc3d-4a31-81e5-a2c7655ccb67")
+	)
+	(junction
+		(at 106.68 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "df973148-0de8-4f42-b34c-ae3cc5dc4ef0")
+	)
+	(wire
+		(pts
+			(xy 171.45 78.74) (xy 135.89 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "246b80a1-6462-4471-b2c7-1393b04d55b5")
+	)
+	(wire
+		(pts
+			(xy 167.64 91.44) (xy 172.72 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27afafa9-2b80-4e74-ad69-6e84ea9927dd")
+	)
+	(wire
+		(pts
+			(xy 142.24 87.63) (xy 142.24 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2edbe70e-24bc-4d0a-99fb-b898f2c8b5a7")
+	)
+	(wire
+		(pts
+			(xy 116.84 68.58) (xy 113.03 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31bc9147-5408-440f-9593-2b8fa23beb22")
+	)
+	(wire
+		(pts
+			(xy 167.64 64.77) (xy 171.45 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "371305aa-ebb2-4852-b5bb-f4c5dd1a81a2")
+	)
+	(wire
+		(pts
+			(xy 137.16 106.68) (xy 172.72 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "403b000c-6de6-4ea7-a75b-4fe9948228df")
+	)
+	(wire
+		(pts
+			(xy 102.87 78.74) (xy 135.89 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "475a0c95-9ec0-41c0-a552-59db7931faf9")
+	)
+	(wire
+		(pts
+			(xy 135.89 64.77) (xy 135.89 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4edf3f68-b008-4aae-aa3a-0e06f96c5afb")
+	)
+	(wire
+		(pts
+			(xy 171.45 64.77) (xy 171.45 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "584e9e98-a507-4d42-90d6-5f0d545ff763")
+	)
+	(wire
+		(pts
+			(xy 113.03 68.58) (xy 113.03 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "591fd3c9-97c4-4541-9ee0-fbf8af1bdb14")
+	)
+	(wire
+		(pts
+			(xy 142.24 60.96) (xy 142.24 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ca4464d-f0e2-4b4a-8dae-7527c1fee1a5")
+	)
+	(wire
+		(pts
+			(xy 148.59 95.25) (xy 148.59 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f68a2be-1f01-4dec-a385-ffe671e05fee")
+	)
+	(wire
+		(pts
+			(xy 148.59 95.25) (xy 152.4 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86b946be-cba5-4fa3-a8de-96798a82f354")
+	)
+	(wire
+		(pts
+			(xy 132.08 91.44) (xy 137.16 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87d19e2b-722a-4b76-89c5-7664f31e0593")
+	)
+	(wire
+		(pts
+			(xy 113.03 95.25) (xy 116.84 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b31afb3-38ca-407d-97ba-33982ab0ab23")
+	)
+	(wire
+		(pts
+			(xy 106.68 87.63) (xy 106.68 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a889149c-3110-4a3c-bfba-df1a58b9d8d0")
+	)
+	(wire
+		(pts
+			(xy 101.6 106.68) (xy 137.16 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac3f8e96-8508-4200-8dad-9aba9f6557a3")
+	)
+	(wire
+		(pts
+			(xy 172.72 91.44) (xy 172.72 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1fff9b4-be86-42b3-86ce-cae6420dc38d")
+	)
+	(wire
+		(pts
+			(xy 106.68 87.63) (xy 116.84 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b91bdf96-6562-4c57-8f9f-95a5bd722720")
+	)
+	(wire
+		(pts
+			(xy 152.4 68.58) (xy 148.59 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca0d134d-3182-4ff3-837c-1ecb16c236f8")
+	)
+	(wire
+		(pts
+			(xy 106.68 60.96) (xy 106.68 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d22e5bd6-e20e-433d-84c6-6cf7d59fe896")
+	)
+	(wire
+		(pts
+			(xy 132.08 64.77) (xy 135.89 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7095110-ccb2-45bb-92f4-e06b3b6e8473")
+	)
+	(wire
+		(pts
+			(xy 148.59 68.58) (xy 148.59 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbe828f5-d276-4686-b1d5-9527b817c018")
+	)
+	(wire
+		(pts
+			(xy 137.16 91.44) (xy 137.16 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de07627b-2270-4ef1-a27f-5eac7a4266ae")
+	)
+	(wire
+		(pts
+			(xy 113.03 95.25) (xy 113.03 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2984e87-fb24-4b9f-b5fb-5e9ad36b0e37")
+	)
+	(wire
+		(pts
+			(xy 116.84 60.96) (xy 106.68 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4bbb1fd-707f-4b83-acef-bd5e4dd62f31")
+	)
+	(wire
+		(pts
+			(xy 142.24 87.63) (xy 152.4 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f853f39b-b66f-4593-9565-14a686764c6b")
+	)
+	(wire
+		(pts
+			(xy 152.4 60.96) (xy 142.24 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f88163aa-4649-4b01-95fd-dd9f8c3180de")
+	)
+	(hierarchical_label "Vd4_1"
+		(shape input)
+		(at 106.68 115.57 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "034205b3-93bb-456a-a075-c4cc733a138c")
+	)
+	(hierarchical_label "Vg4_2"
+		(shape input)
+		(at 101.6 106.68 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "197634af-6863-44a5-b274-8372f184112f")
+	)
+	(hierarchical_label "Vt4_1"
+		(shape input)
+		(at 113.03 115.57 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5f99abda-fadf-4c5c-95c8-c7b99efe9dc3")
+	)
+	(hierarchical_label "Vg4_1"
+		(shape input)
+		(at 102.87 78.74 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c4a6bb9b-faed-4b93-a528-32bd29ce1f98")
+	)
+	(hierarchical_label "Vd4_2"
+		(shape input)
+		(at 142.24 115.57 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d74ef866-4466-4ff2-bc7c-ab8644077b33")
+	)
+	(hierarchical_label "Vt4_2"
+		(shape input)
+		(at 148.59 115.57 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "eafebb0b-4ed3-437a-8459-c267a9731ce5")
+	)
+	(sheet
+		(at 116.84 55.88)
+		(size 15.24 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "2cfd9683-8b98-485f-a63d-722f5324883b")
+		(property "Sheetname" "Element"
+			(at 116.84 55.1684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "element.kicad_sch"
+			(at 116.84 71.7046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Vg" input
+			(at 132.08 64.77 0)
+			(uuid "af85dceb-8f47-46a1-8a60-29f6c5fad4a7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Vt" input
+			(at 116.84 68.58 180)
+			(uuid "975c4ecd-7a20-4f04-8789-b8c340e04f57")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Vset" input
+			(at 116.84 60.96 180)
+			(uuid "64724e63-eb6e-4388-b5ea-f485d98436ce")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "shimarray"
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/0da8bef0-1309-43b9-a579-d3bf159b7e5e"
+					(page "2")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/6e853418-af53-427a-8abc-3ea96b4dc7cd"
+					(page "16")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/ef4329a5-adbb-4f2d-a2ba-5055e167e140"
+					(page "21")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/e6aea225-33dd-4a3b-a2e7-cedc4a3e676c"
+					(page "25")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/f207237b-7fa2-4350-8864-67c6fa73ac7d"
+					(page "26")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/8f34beb5-5f92-44c6-a9c8-2424db0d7aea"
+					(page "31")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/237eabdd-0674-4664-b001-9fd9474f9365"
+					(page "86")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/b9bb10a4-151a-4a8c-b555-22b063d147fa"
+					(page "91")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/f38bf48a-c8ab-40a1-977a-911188f81bea"
+					(page "96")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/0e06703e-0daf-4b20-b2db-82c2cf60a334"
+					(page "101")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/ba62c276-9c56-4c85-8ebc-4b36aff40f88"
+					(page "106")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/d8900821-e032-42b8-842d-aee84a2b5803"
+					(page "111")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/2d967eeb-569d-47e7-a3fa-ba0ebd6f72b9"
+					(page "46")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/40524c2c-d6eb-43b6-8877-5e7c43401431"
+					(page "51")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/a3be01dc-f8d3-49b0-982e-dde908014bd3"
+					(page "56")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/31626ce3-fae9-420b-af0f-acf43783f0b0"
+					(page "61")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/1733fa41-1b36-426a-9cd3-885185965317"
+					(page "66")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/7fe35886-de40-4c62-af4f-086cd580d13e"
+					(page "71")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/4bebe2c7-4aea-4804-977b-634d53f96901"
+					(page "126")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/6c20492b-2bd0-47aa-8e23-3d437601c628"
+					(page "131")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/9fa09088-8ff3-493c-b7a0-81976400c8bb"
+					(page "136")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/b7a7ca8a-3593-4e66-911a-15d0b26c7fee"
+					(page "141")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/c6781b38-fb68-46c2-a2d8-80634bd567bd"
+					(page "146")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/fea03adb-dbdc-48e1-8718-2215014d7e83"
+					(page "151")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/65e88bbb-33de-423a-a69b-1d5671ec8441"
+					(page "166")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/431ce4c0-afb6-49a2-89b4-40a774d9c874"
+					(page "171")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/df1aa2e6-94c3-4aca-ae33-f600b576b9bc"
+					(page "176")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/e7e2ff26-bf46-4601-b929-0aa19039e0e5"
+					(page "181")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/a40f0756-4eaf-4c0a-b93f-b1d7a50d7663"
+					(page "186")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/74cf598a-cd15-4d42-885e-04292acac39e"
+					(page "191")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/5fa9f778-3401-4fa5-9d97-60ea872a1843"
+					(page "206")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/a59ccbde-435f-4bc2-bf8a-50ef62c151bd"
+					(page "211")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/2862d11c-1909-40cb-99df-d4e7d94369af"
+					(page "216")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/b34dd1ff-0a8f-4c93-9ec9-057a3dc7ce59"
+					(page "221")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/19c1b2fe-1c7e-4ff4-b4b8-544bd940b7ce"
+					(page "226")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/26fb1bca-79b5-4bf1-9927-0f532496ca1b"
+					(page "231")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 116.84 82.55)
+		(size 15.24 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "6c3734ed-19f8-44f2-aacd-9aa6bc147d71")
+		(property "Sheetname" "Element1"
+			(at 116.84 81.8384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "element.kicad_sch"
+			(at 116.84 98.3746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Vg" input
+			(at 132.08 91.44 0)
+			(uuid "cb1555a3-1cbe-419c-86fc-55f249e1bb55")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Vt" input
+			(at 116.84 95.25 180)
+			(uuid "ab89729b-90a6-4c05-a11f-ee12b942964f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Vset" input
+			(at 116.84 87.63 180)
+			(uuid "d8272474-867e-4215-95ff-608a0fc8563a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "shimarray"
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/0da8bef0-1309-43b9-a579-d3bf159b7e5e"
+					(page "3")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/6e853418-af53-427a-8abc-3ea96b4dc7cd"
+					(page "13")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/ef4329a5-adbb-4f2d-a2ba-5055e167e140"
+					(page "18")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/e6aea225-33dd-4a3b-a2e7-cedc4a3e676c"
+					(page "22")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/f207237b-7fa2-4350-8864-67c6fa73ac7d"
+					(page "8")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/8f34beb5-5f92-44c6-a9c8-2424db0d7aea"
+					(page "28")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/237eabdd-0674-4664-b001-9fd9474f9365"
+					(page "83")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/b9bb10a4-151a-4a8c-b555-22b063d147fa"
+					(page "88")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/f38bf48a-c8ab-40a1-977a-911188f81bea"
+					(page "93")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/0e06703e-0daf-4b20-b2db-82c2cf60a334"
+					(page "98")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/ba62c276-9c56-4c85-8ebc-4b36aff40f88"
+					(page "103")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/d8900821-e032-42b8-842d-aee84a2b5803"
+					(page "108")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/2d967eeb-569d-47e7-a3fa-ba0ebd6f72b9"
+					(page "43")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/40524c2c-d6eb-43b6-8877-5e7c43401431"
+					(page "48")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/a3be01dc-f8d3-49b0-982e-dde908014bd3"
+					(page "53")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/31626ce3-fae9-420b-af0f-acf43783f0b0"
+					(page "58")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/1733fa41-1b36-426a-9cd3-885185965317"
+					(page "63")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/7fe35886-de40-4c62-af4f-086cd580d13e"
+					(page "68")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/4bebe2c7-4aea-4804-977b-634d53f96901"
+					(page "123")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/6c20492b-2bd0-47aa-8e23-3d437601c628"
+					(page "128")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/9fa09088-8ff3-493c-b7a0-81976400c8bb"
+					(page "133")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/b7a7ca8a-3593-4e66-911a-15d0b26c7fee"
+					(page "138")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/c6781b38-fb68-46c2-a2d8-80634bd567bd"
+					(page "143")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/fea03adb-dbdc-48e1-8718-2215014d7e83"
+					(page "148")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/65e88bbb-33de-423a-a69b-1d5671ec8441"
+					(page "163")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/431ce4c0-afb6-49a2-89b4-40a774d9c874"
+					(page "168")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/df1aa2e6-94c3-4aca-ae33-f600b576b9bc"
+					(page "173")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/e7e2ff26-bf46-4601-b929-0aa19039e0e5"
+					(page "178")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/a40f0756-4eaf-4c0a-b93f-b1d7a50d7663"
+					(page "183")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/74cf598a-cd15-4d42-885e-04292acac39e"
+					(page "188")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/5fa9f778-3401-4fa5-9d97-60ea872a1843"
+					(page "203")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/a59ccbde-435f-4bc2-bf8a-50ef62c151bd"
+					(page "208")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/2862d11c-1909-40cb-99df-d4e7d94369af"
+					(page "213")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/b34dd1ff-0a8f-4c93-9ec9-057a3dc7ce59"
+					(page "218")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/19c1b2fe-1c7e-4ff4-b4b8-544bd940b7ce"
+					(page "223")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/26fb1bca-79b5-4bf1-9927-0f532496ca1b"
+					(page "228")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 152.4 82.55)
+		(size 15.24 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "6f02f8ca-c1b8-40fc-bd76-dfbeb84998df")
+		(property "Sheetname" "Element3"
+			(at 152.4 81.8384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "element.kicad_sch"
+			(at 152.4 98.3746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Vg" input
+			(at 167.64 91.44 0)
+			(uuid "47a983c2-823f-446d-a01c-e9b77e428370")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Vt" input
+			(at 152.4 95.25 180)
+			(uuid "dddf398f-b76c-4ab3-8fc7-2fdbc5918967")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Vset" input
+			(at 152.4 87.63 180)
+			(uuid "0201191f-63fb-4ca3-9589-9e5be00b8953")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "shimarray"
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/0da8bef0-1309-43b9-a579-d3bf159b7e5e"
+					(page "5")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/6e853418-af53-427a-8abc-3ea96b4dc7cd"
+					(page "14")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/ef4329a5-adbb-4f2d-a2ba-5055e167e140"
+					(page "19")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/e6aea225-33dd-4a3b-a2e7-cedc4a3e676c"
+					(page "23")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/f207237b-7fa2-4350-8864-67c6fa73ac7d"
+					(page "9")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/8f34beb5-5f92-44c6-a9c8-2424db0d7aea"
+					(page "29")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/237eabdd-0674-4664-b001-9fd9474f9365"
+					(page "84")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/b9bb10a4-151a-4a8c-b555-22b063d147fa"
+					(page "89")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/f38bf48a-c8ab-40a1-977a-911188f81bea"
+					(page "94")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/0e06703e-0daf-4b20-b2db-82c2cf60a334"
+					(page "99")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/ba62c276-9c56-4c85-8ebc-4b36aff40f88"
+					(page "104")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/d8900821-e032-42b8-842d-aee84a2b5803"
+					(page "109")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/2d967eeb-569d-47e7-a3fa-ba0ebd6f72b9"
+					(page "44")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/40524c2c-d6eb-43b6-8877-5e7c43401431"
+					(page "49")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/a3be01dc-f8d3-49b0-982e-dde908014bd3"
+					(page "54")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/31626ce3-fae9-420b-af0f-acf43783f0b0"
+					(page "59")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/1733fa41-1b36-426a-9cd3-885185965317"
+					(page "64")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/7fe35886-de40-4c62-af4f-086cd580d13e"
+					(page "69")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/4bebe2c7-4aea-4804-977b-634d53f96901"
+					(page "124")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/6c20492b-2bd0-47aa-8e23-3d437601c628"
+					(page "129")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/9fa09088-8ff3-493c-b7a0-81976400c8bb"
+					(page "134")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/b7a7ca8a-3593-4e66-911a-15d0b26c7fee"
+					(page "139")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/c6781b38-fb68-46c2-a2d8-80634bd567bd"
+					(page "144")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/fea03adb-dbdc-48e1-8718-2215014d7e83"
+					(page "149")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/65e88bbb-33de-423a-a69b-1d5671ec8441"
+					(page "164")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/431ce4c0-afb6-49a2-89b4-40a774d9c874"
+					(page "169")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/df1aa2e6-94c3-4aca-ae33-f600b576b9bc"
+					(page "174")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/e7e2ff26-bf46-4601-b929-0aa19039e0e5"
+					(page "179")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/a40f0756-4eaf-4c0a-b93f-b1d7a50d7663"
+					(page "184")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/74cf598a-cd15-4d42-885e-04292acac39e"
+					(page "189")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/5fa9f778-3401-4fa5-9d97-60ea872a1843"
+					(page "204")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/a59ccbde-435f-4bc2-bf8a-50ef62c151bd"
+					(page "209")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/2862d11c-1909-40cb-99df-d4e7d94369af"
+					(page "214")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/b34dd1ff-0a8f-4c93-9ec9-057a3dc7ce59"
+					(page "219")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/19c1b2fe-1c7e-4ff4-b4b8-544bd940b7ce"
+					(page "224")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/26fb1bca-79b5-4bf1-9927-0f532496ca1b"
+					(page "229")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 152.4 55.88)
+		(size 15.24 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "eba8ee77-866d-4757-b26d-84e4cd60bfbc")
+		(property "Sheetname" "Element2"
+			(at 152.4 55.1684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "element.kicad_sch"
+			(at 152.4 71.7046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Vg" input
+			(at 167.64 64.77 0)
+			(uuid "cf2b3bf5-ab9a-4d64-a566-8433c624819b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Vt" input
+			(at 152.4 68.58 180)
+			(uuid "6529780e-29ba-484e-b9ef-df7a76b38d5e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Vset" input
+			(at 152.4 60.96 180)
+			(uuid "47414443-907b-43ca-bd90-f7195540a8bc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "shimarray"
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/0da8bef0-1309-43b9-a579-d3bf159b7e5e"
+					(page "4")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/6e853418-af53-427a-8abc-3ea96b4dc7cd"
+					(page "15")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/ef4329a5-adbb-4f2d-a2ba-5055e167e140"
+					(page "20")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/e6aea225-33dd-4a3b-a2e7-cedc4a3e676c"
+					(page "24")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/f207237b-7fa2-4350-8864-67c6fa73ac7d"
+					(page "10")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/8f34beb5-5f92-44c6-a9c8-2424db0d7aea"
+					(page "30")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/237eabdd-0674-4664-b001-9fd9474f9365"
+					(page "85")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/b9bb10a4-151a-4a8c-b555-22b063d147fa"
+					(page "90")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/f38bf48a-c8ab-40a1-977a-911188f81bea"
+					(page "95")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/0e06703e-0daf-4b20-b2db-82c2cf60a334"
+					(page "100")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/ba62c276-9c56-4c85-8ebc-4b36aff40f88"
+					(page "105")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/d8900821-e032-42b8-842d-aee84a2b5803"
+					(page "110")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/2d967eeb-569d-47e7-a3fa-ba0ebd6f72b9"
+					(page "45")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/40524c2c-d6eb-43b6-8877-5e7c43401431"
+					(page "50")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/a3be01dc-f8d3-49b0-982e-dde908014bd3"
+					(page "55")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/31626ce3-fae9-420b-af0f-acf43783f0b0"
+					(page "60")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/1733fa41-1b36-426a-9cd3-885185965317"
+					(page "65")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/7fe35886-de40-4c62-af4f-086cd580d13e"
+					(page "70")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/4bebe2c7-4aea-4804-977b-634d53f96901"
+					(page "125")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/6c20492b-2bd0-47aa-8e23-3d437601c628"
+					(page "130")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/9fa09088-8ff3-493c-b7a0-81976400c8bb"
+					(page "135")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/b7a7ca8a-3593-4e66-911a-15d0b26c7fee"
+					(page "140")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/c6781b38-fb68-46c2-a2d8-80634bd567bd"
+					(page "145")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/fea03adb-dbdc-48e1-8718-2215014d7e83"
+					(page "150")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/65e88bbb-33de-423a-a69b-1d5671ec8441"
+					(page "165")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/431ce4c0-afb6-49a2-89b4-40a774d9c874"
+					(page "170")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/df1aa2e6-94c3-4aca-ae33-f600b576b9bc"
+					(page "175")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/e7e2ff26-bf46-4601-b929-0aa19039e0e5"
+					(page "180")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/a40f0756-4eaf-4c0a-b93f-b1d7a50d7663"
+					(page "185")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/74cf598a-cd15-4d42-885e-04292acac39e"
+					(page "190")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/5fa9f778-3401-4fa5-9d97-60ea872a1843"
+					(page "205")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/a59ccbde-435f-4bc2-bf8a-50ef62c151bd"
+					(page "210")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/2862d11c-1909-40cb-99df-d4e7d94369af"
+					(page "215")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/b34dd1ff-0a8f-4c93-9ec9-057a3dc7ce59"
+					(page "220")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/19c1b2fe-1c7e-4ff4-b4b8-544bd940b7ce"
+					(page "225")
+				)
+				(path "/deb88747-eeb6-4309-b360-a8679d05b247/26fb1bca-79b5-4bf1-9927-0f532496ca1b"
+					(page "230")
+				)
+			)
+		)
+	)
+)
