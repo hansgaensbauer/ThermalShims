@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8,
-          "height": 1.27,
-          "width": 2.54
+          "drill": 0.0,
+          "height": 1.0,
+          "width": 1.0
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -50,7 +50,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.4
+          "min_clearance": 0.16
         }
       },
       "diff_pair_dimensions": [
@@ -485,7 +485,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "heater.kicad_pro",
+    "filename": "temp_sensors.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -505,7 +505,7 @@
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.16,
         "tuning_profile": "",
-        "via_diameter": 0.4,
+        "via_diameter": 0.46,
         "via_drill": 0.26,
         "wire_width": 6
       }
@@ -640,9 +640,9 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "heater.kicad_sch",
+        "filename": "temp_sensors.kicad_sch",
         "name": "Root",
-        "uuid": "8b18eb9d-ba7e-41cb-bd60-352929a0037e"
+        "uuid": "3dc0b02f-b3ef-4802-aefc-df594c408bbd"
       }
     ],
     "used_designators": "",
@@ -650,108 +650,8 @@
   },
   "sheets": [
     [
-      "8b18eb9d-ba7e-41cb-bd60-352929a0037e",
+      "3dc0b02f-b3ef-4802-aefc-df594c408bbd",
       "Root"
-    ],
-    [
-      "1d1cadcd-0a6f-4d1f-b5d7-b911de185b44",
-      "element"
-    ],
-    [
-      "2913443c-269f-40a6-8a95-244810843955",
-      "element1"
-    ],
-    [
-      "f18a98af-cb9e-4278-93ad-446639cc3a08",
-      "element2"
-    ],
-    [
-      "a8e57f91-1730-4abf-b5fc-f92b4b4ecd98",
-      "element3"
-    ],
-    [
-      "cb388f3c-e7a9-4df7-b0c9-6ee005808b41",
-      "element4"
-    ],
-    [
-      "21dd05c5-449c-483e-8255-1a42a5ef2b92",
-      "element5"
-    ],
-    [
-      "6b405845-9757-45fb-9ed3-baf08879ec50",
-      "element6"
-    ],
-    [
-      "3e0402af-dacb-4b81-aba5-ca553a7e01e0",
-      "element7"
-    ],
-    [
-      "88714e31-056b-4d11-a964-e9b945e2eae6",
-      "element8"
-    ],
-    [
-      "b8b2c44e-ae49-4209-8fc3-e7cde316c6ef",
-      "element9"
-    ],
-    [
-      "ea8e6edc-1328-4aef-9872-33fbba09746c",
-      "element10"
-    ],
-    [
-      "32b62fc4-436c-4fd1-978a-99acdc19bdbc",
-      "element11"
-    ],
-    [
-      "15762492-7df4-4b2a-b632-52b687bfe512",
-      "element12"
-    ],
-    [
-      "6fd9d50b-9319-40a6-8589-9990a4456d8f",
-      "element13"
-    ],
-    [
-      "586790b8-fd1e-4378-a1c2-5e463b88d3d3",
-      "element14"
-    ],
-    [
-      "234533c7-9c24-448e-b51c-4818eb6cbbff",
-      "element15"
-    ],
-    [
-      "a3f61fa9-b9c2-472d-96cf-6c09180c1093",
-      "element16"
-    ],
-    [
-      "5aae9556-6518-4f80-b036-bdd1260bfe4a",
-      "element17"
-    ],
-    [
-      "a33d7681-372d-4ab3-a60c-fa498ad81fbc",
-      "element18"
-    ],
-    [
-      "620f9178-dd39-4c1f-abfb-f23450496c39",
-      "element19"
-    ],
-    [
-      "47780afa-4b9e-4f21-9708-19f398a192ed",
-      "element20"
-    ],
-    [
-      "a90b6cb6-116b-46af-b4b1-8a98805227ef",
-      "element21"
-    ],
-    [
-      "117d6a01-3456-4ec5-a1bc-51d049f616d2",
-      "element22"
-    ],
-    [
-      "660558b0-3135-4e0e-87df-626949671016",
-      "element23"
-    ],
-    [
-      "5a184919-e0ce-4f8a-8e8e-8a5b0ceb9fe2",
-      "element24"
     ]
   ],
   "text_variables": {},
