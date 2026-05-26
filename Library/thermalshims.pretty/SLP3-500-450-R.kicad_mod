@@ -1,0 +1,136 @@
+(footprint "SLP3-500-450-R"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Light Pipe")
+	(tags "Light Pipe")
+	(property "Reference" "LP5"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "661433f9-ce2e-47b1-ab70-b0f879be3773")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "~"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "5307bcfa-3c38-4c8b-9bc6-c1c06f487d12")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9c3014ef-afca-4c1a-8c16-74bd09dc4a47")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bef9e951-d3be-4297-9f44-4bdafe1749a7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(sheetname "/")
+	(sheetfile "keyer.kicad_sch")
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -2.2 -3.6)
+		(end 2.2 -1.8)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "986beeec-279e-4d97-851c-8b692fc5611b")
+	)
+	(fp_rect
+		(start -2.2 1.8)
+		(end 2.2 2.4)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "03ba7533-fb75-4001-b2ab-e558fc381c1c")
+	)
+	(fp_rect
+		(start -2.25 -1.8)
+		(end 2.25 1.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "User.2")
+		(uuid "6b7448a2-dbe8-4905-9715-b3b0123b54bc")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "513ae789-ab76-4932-a59a-92aed8dcdc59")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" np_thru_hole circle
+		(at -1.27 -2.7)
+		(size 1.27 1.27)
+		(drill 1.27)
+		(layers "*.Cu" "*.Mask")
+		(solder_mask_margin 0.102)
+		(uuid "e5b181b2-d1e5-46ee-b15b-41a144f3def9")
+	)
+	(pad "" np_thru_hole circle
+		(at 1.27 -2.7)
+		(size 1.27 1.27)
+		(drill 1.27)
+		(layers "*.Cu" "*.Mask")
+		(solder_mask_margin 0.102)
+		(uuid "1c4573a6-2104-4f21-adaf-9752e0aa2acd")
+	)
+	(embedded_fonts no)
+	(model "/home/hans/Hanlab/ThermalShims/Library/thermalshims.pretty/3D/SLP3-500-450-R.step"
+		(offset
+			(xyz -2.56 -7.68 4)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)

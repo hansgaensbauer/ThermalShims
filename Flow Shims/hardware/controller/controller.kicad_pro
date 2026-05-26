@@ -100,9 +100,9 @@
         "missing_tuning_profile": "warning",
         "net_conflict": "warning",
         "nonmirrored_text_on_back_layer": "warning",
-        "npth_inside_courtyard": "ignore",
+        "npth_inside_courtyard": "error",
         "padstack": "warning",
-        "pth_inside_courtyard": "ignore",
+        "pth_inside_courtyard": "error",
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
         "silk_over_copper": "warning",
@@ -132,7 +132,7 @@
         "max_error": 0.005,
         "min_clearance": 0.0,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.5,
+        "min_copper_edge_clearance": 0.0,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
@@ -143,7 +143,7 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.0,
+        "min_track_width": 0.2,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.0,
@@ -194,7 +194,9 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        0.4,
+        1.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -228,8 +230,8 @@
           "drill": 0.0
         },
         {
-          "diameter": 0.45,
-          "drill": 0.3
+          "diameter": 0.46,
+          "drill": 0.26
         }
       ],
       "zones_allow_external_fillets": false
@@ -489,7 +491,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Rings.kicad_pro",
+    "filename": "controller.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -523,14 +525,10 @@
   },
   "pcbnew": {
     "last_paths": {
-      "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "cam/",
-      "pos_files": "",
+      "plot": "",
       "specctra_dsn": "",
-      "step": "",
-      "svg": "",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -648,15 +646,24 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "Rings.kicad_sch",
-        "name": "Rings",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "filename": "controller.kicad_sch",
+        "name": "Root",
+        "uuid": "d64a78d1-f1e8-43e0-b9a1-6781c2001426"
       }
     ],
-    "used_designators": "",
+    "used_designators": "H5,#FLG3,LP1-2",
     "variants": []
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "d64a78d1-f1e8-43e0-b9a1-6781c2001426",
+      "Root"
+    ],
+    [
+      "337b1e7f-74f0-43b2-976a-a73f8d933cda",
+      "Power Supply"
+    ]
+  ],
   "text_variables": {},
   "tuning_profiles": {
     "meta": {
