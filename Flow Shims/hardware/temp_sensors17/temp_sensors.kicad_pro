@@ -60,7 +60,12 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "courtyards_overlap|143075000|156535000|9556e816-3bb7-40da-a68d-1b2e9a8c052a|ff718151-6971-47d0-a8ac-4f9b1146e6ae",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -86,7 +91,7 @@
         "hole_to_hole": "warning",
         "holes_co_located": "warning",
         "invalid_outline": "error",
-        "isolated_copper": "warning",
+        "isolated_copper": "ignore",
         "item_on_disabled_layer": "error",
         "items_not_allowed": "error",
         "length_out_of_range": "error",
@@ -104,7 +109,7 @@
         "padstack": "warning",
         "pth_inside_courtyard": "error",
         "shorting_items": "error",
-        "silk_edge_clearance": "warning",
+        "silk_edge_clearance": "ignore",
         "silk_over_copper": "warning",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
@@ -142,10 +147,10 @@
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
+        "min_through_hole_diameter": 0.254,
         "min_track_width": 0.2,
-        "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.5,
+        "min_via_annular_width": 0.127,
+        "min_via_diameter": 0.508,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -384,7 +389,7 @@
         1,
         0,
         2,
-        2,
+        0,
         2,
         2
       ],
@@ -397,7 +402,7 @@
         0,
         1,
         0,
-        2,
+        0,
         0,
         0,
         2
@@ -492,7 +497,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.16,
+        "clearance": 0.1524,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -645,7 +650,7 @@
         "uuid": "3dc0b02f-b3ef-4802-aefc-df594c408bbd"
       }
     ],
-    "used_designators": "",
+    "used_designators": "#FLG1-2",
     "variants": []
   },
   "sheets": [

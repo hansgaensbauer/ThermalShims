@@ -104,7 +104,7 @@
         "padstack": "warning",
         "pth_inside_courtyard": "error",
         "shorting_items": "error",
-        "silk_edge_clearance": "warning",
+        "silk_edge_clearance": "ignore",
         "silk_over_copper": "warning",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
@@ -527,7 +527,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "cam/",
       "specctra_dsn": "",
       "vrml": ""
     },
@@ -651,7 +651,7 @@
         "uuid": "d64a78d1-f1e8-43e0-b9a1-6781c2001426"
       }
     ],
-    "used_designators": "H5,#FLG3,LP1-2",
+    "used_designators": "R2,D3,Q1,#PWR17,#PWR27,#PWR183-184,K1",
     "variants": []
   },
   "sheets": [

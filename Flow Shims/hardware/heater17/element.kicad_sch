@@ -1180,16 +1180,6 @@
 	)
 	(wire
 		(pts
-			(xy 5.1588 2.0957) (xy 7.6988 2.0957)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "071162e7-442e-4972-8cee-8866be7f05e5")
-	)
-	(wire
-		(pts
 			(xy 170.18 86.36) (xy 170.18 87.63)
 		)
 		(stroke
@@ -1307,16 +1297,6 @@
 			(type default)
 		)
 		(uuid "e4bd03c5-4911-4a36-a83b-bc408461f9ff")
-	)
-	(label "VG10"
-		(at 5.1588 2.0957 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "ef0fbde4-987a-4d5b-adc7-d234cd18172b")
 	)
 	(hierarchical_label "VG"
 		(shape input)
