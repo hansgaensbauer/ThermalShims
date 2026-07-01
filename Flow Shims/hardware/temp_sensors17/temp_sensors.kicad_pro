@@ -526,7 +526,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "cam/",
       "specctra_dsn": "",
       "vrml": ""
     },

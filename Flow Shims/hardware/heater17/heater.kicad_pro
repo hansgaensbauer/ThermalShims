@@ -794,7 +794,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "cam/",
       "specctra_dsn": "",
       "vrml": ""
     },
@@ -918,7 +918,7 @@
         "uuid": "8b18eb9d-ba7e-41cb-bd60-352929a0037e"
       }
     ],
-    "used_designators": "#FLG1-5",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [

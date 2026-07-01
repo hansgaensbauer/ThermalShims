@@ -42,7 +42,8 @@ fp-info-cache
 # Local project settings
 *.kicad_prl
 
-*/cam/
+**/cam/
+**/hardware/*/*.zip
 
 Debug/
 Release/
@@ -104,7 +105,9 @@ Release/
 TouchGFX/generated
 TouchGFX/build
 TouchGFX/simulator/msvs/.vs
-*/Drivers/*
+Flow*Shims/Firmware/Drivers/*
+Flow*Shims/Firmware/Middlewares/*
+Flow*Shims/Firmware/USB_DEVICE/*
 
 # Backup files
 
