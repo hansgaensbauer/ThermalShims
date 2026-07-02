@@ -99,6 +99,8 @@ int main(void)
   HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, GPIO_PIN_SET);
   HAL_GPIO_WritePin(VTEMP_GPIO_Port, VTEMP_Pin, GPIO_PIN_SET);
   tmp11826_init();
+  HAL_Delay(1000);
+  onewire_search();
 //  onewire_search();
 
   /* USER CODE END 2 */
@@ -111,9 +113,10 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 
-	debug_printf("Hello World\n\r");
+//	onewire_search();
+	uint16_t temp = tmp11826_get_temp(0);
+	debug_printf("Temp: %d\n\r", temp);
 	HAL_Delay(1000);
-	onewire_search();
   }
   /* USER CODE END 3jh */
 }

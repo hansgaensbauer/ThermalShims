@@ -8,10 +8,15 @@
 #include "tmp11826.h"
 #include "stm32l0xx.h"
 #include "stm32l0xx_hal.h"
+#ifdef USE_STANDARD_MODE
+#include "delays_standardmode.h"
+#else
 #include "delays.h"
+#endif
+
 #include "main.h"
 
-uint64_t *device_addresses[MAX_DEVICES];
+uint64_t device_addresses[MAX_DEVICES];
 uint8_t num_devices = 0;
 
 void tmp11826_init(){
@@ -20,6 +25,39 @@ void tmp11826_init(){
 	ONEWIRE_PORT->PUPDR |= ONEWIRE_PIN_PUPDR_PULLUP; //open drain
 	ONEWIRE_PORT->MODER |= ONEWIRE_PIN_MODER_OUTPUT; //output
 	ONEWIRE_PORT->BSRR = ONEWIRE_PIN_SETHIGH; //Write output HIGH
+}
+
+uint16_t tmp11826_get_temp(uint8_t sensor_index){
+	uint64_t address = device_addresses[sensor_index];
+	onewire_bus_reset();
+	//SKIPADDR
+	onewire_write_byte(ONEWIRE_CMD_SKIPADDR);
+	//CONVERTEMP
+	onewire_write_byte(ONEWIRE_CMD_CONVERTEMP);
+	//Wait
+	HAL_Delay(5);
+	//Reset
+	onewire_bus_reset();
+	//MATCHADDR
+	onewire_write_byte(ONEWIRE_CMD_MATCHADDR);
+	//SEND ADDRESS
+	onewire_write_byte(address & 0xFF);
+	onewire_write_byte((address >> 8) & 0xFF);
+	onewire_write_byte((address >> 16) & 0xFF);
+	onewire_write_byte((address >> 24) & 0xFF);
+	onewire_write_byte((address >> 32) & 0xFF);
+	onewire_write_byte((address >> 40) & 0xFF);
+	onewire_write_byte((address >> 48) & 0xFF);
+	onewire_write_byte((address >> 56) & 0xFF);
+	//READSCRATCHPAD
+	onewire_write_byte(ONEWIRE_CMD_READ_SCRATCHPAD);
+	//Read temp
+	uint8_t byte_low = onewire_read_byte();
+	uint16_t byte_high = onewire_read_byte();
+	onewire_bus_reset();
+
+	//return temp
+	return byte_high << 8 | byte_low;
 }
 
 void onewire_write_bit(char bit){
@@ -32,7 +70,7 @@ void onewire_write_bit(char bit){
 		DELAY_TWR0L
 		ONEWIRE_PORT->BSRR = ONEWIRE_PIN_SETHIGH; //output high
 	}
-	delay_us(20);
+	delay_us(200);
 }
 
 uint8_t onewire_read_bit(){
@@ -42,7 +80,7 @@ uint8_t onewire_read_bit(){
 	DELAY_TRL
 	uint8_t value = (ONEWIRE_PORT->IDR & ONEWIRE_PIN) >> ONEWIRE_PIN_OFFSET;
 
-	delay_us(20);
+	delay_us(200);
 	return value;
 }
 
@@ -58,6 +96,7 @@ void onewire_write_byte(uint8_t byte){
 	for(uint8_t i = 0; i < 8; i++){
 		onewire_write_bit((byte >> i) & 0x01);
 	}
+	HAL_Delay(1);
 }
 
 void onewire_bus_reset(){
@@ -65,7 +104,7 @@ void onewire_bus_reset(){
 	ONEWIRE_PORT->BSRR = ONEWIRE_PIN_SETLOW; //output low
 	DELAY_TRSTL
 	ONEWIRE_PORT->BSRR = ONEWIRE_PIN_SETHIGH; //output low
-	delay_us(100);
+	delay_us(500);
 }
 
 uint8_t onewire_search_pass(uint64_t* addr){
@@ -131,20 +170,19 @@ uint8_t onewire_search(){
 	num_devices = 0;
 
 	uint64_t address;
-	uint8_t result = 0;
-	debug_printf("Search Result: %x\n\r", result);
+	uint8_t result = onewire_search_pass(&address);
 	while(!result){
-		result = onewire_search_pass(&address);
-		debug_printf("Search Result: %x\n\r", result);
 		device_addresses[num_devices] = address;
 		num_devices ++;
+		result = onewire_search_pass(&address);
 	}
 
 	debug_printf("Found %d devices.\n\r", num_devices);
+	disable_fast_arbitration();
 	return num_devices;
 }
 
-static inline void delay_us(uint16_t us)
+void delay_us(uint16_t us)
 {
     TIM6->CNT = 0;
     TIM6->CR1 = TIM_CR1_CEN;
@@ -156,14 +194,3 @@ static inline void delay_us(uint16_t us)
     TIM6->CR1 = 0;
 }
 
-static inline void delay_timer(uint16_t count)
-{
-    TIM6->CNT = 0;
-    TIM6->CR1 = TIM_CR1_CEN;
-
-    while (TIM6->CNT < count) {
-        /* spin */
-    }
-
-    TIM6->CR1 = 0;
-}

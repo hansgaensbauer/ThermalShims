@@ -10,6 +10,8 @@
 
 #include "stm32l0xx_hal.h"
 
+#define USE_STANDARD_MODE
+
 #define DEVICE_FCLK_MHZ 16
 #define MAX_DEVICES 32
 
@@ -24,6 +26,9 @@
 #define ONEWIRE_CMD_SKIPADDR 0xCC
 #define ONEWIRE_CMD_SCRATCHPAD 0x4E
 #define ONEWIRE_CMD_SEARCHADDR 0xF0
+#define ONEWIRE_CMD_CONVERTEMP 0x44
+#define ONEWIRE_CMD_MATCHADDR 0x55
+#define ONEWIRE_CMD_READ_SCRATCHPAD 0xBE
 
 #define ONEWIRE_CONFIG1 0x70
 #define ONEWIRE_CONFIG2 0x80
@@ -44,12 +49,12 @@ void onewire_write_bit(char bit);
 uint8_t onewire_read_bit();
 uint8_t onewire_read_byte();
 void onewire_write_byte(uint8_t byte);
-static inline void delay_us(uint16_t us);
-static inline void delay_timer(uint16_t count);
+void delay_us(uint16_t us);
 void tmp11826_init();
 void disable_fast_arbitration();
 void enable_fast_arbitration();
-
+uint16_t tmp11826_get_temp(uint8_t sensor_index);
+void onewire_bus_reset();
 uint8_t onewire_search_pass(uint64_t* addr);
 uint8_t onewire_search();
 
