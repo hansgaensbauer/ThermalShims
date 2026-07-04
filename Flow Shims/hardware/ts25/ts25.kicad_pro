@@ -50,7 +50,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.16
+          "min_clearance": 0.09
         }
       },
       "diff_pair_dimensions": [
@@ -60,12 +60,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "courtyards_overlap|143075000|156535000|9556e816-3bb7-40da-a68d-1b2e9a8c052a|ff718151-6971-47d0-a8ac-4f9b1146e6ae",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -490,7 +485,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "temp_sensors.kicad_pro",
+    "filename": "ts25.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -508,10 +503,10 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.16,
+        "track_width": 0.1524,
         "tuning_profile": "",
-        "via_diameter": 0.46,
-        "via_drill": 0.26,
+        "via_diameter": 0.508,
+        "via_drill": 0.254,
         "wire_width": 6
       }
     ],
@@ -600,12 +595,24 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -645,18 +652,122 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "temp_sensors.kicad_sch",
-        "name": "Root",
+        "filename": "ts25.kicad_sch",
+        "name": "ts25",
         "uuid": "3dc0b02f-b3ef-4802-aefc-df594c408bbd"
       }
     ],
-    "used_designators": "#FLG1-2",
+    "used_designators": "C55-58,TP2-5,R2-7,#PWR106,#PWR117,#PWR121-122,#PWR126-127,#PWR131-132,#PWR136-137,#PWR143-144,#PWR148-149,#PWR153-154,#PWR158-159,#PWR163-164,#PWR168-169,#PWR173-174,#PWR178-179,#PWR183-184,#PWR188-189,#PWR193-194,#PWR198-199,#PWR203-204,#PWR208-209,#PWR213-214,#PWR218-219,#PWR223-224,#PWR228-229,#PWR233-234,#PWR238-239,#PWR242-256,U53-79",
     "variants": []
   },
   "sheets": [
     [
       "3dc0b02f-b3ef-4802-aefc-df594c408bbd",
-      "Root"
+      "ts25"
+    ],
+    [
+      "e7a39a4e-75df-4a3a-8939-88f68bf91e97",
+      "Temp Sensors"
+    ],
+    [
+      "3c1b5327-54d0-4f39-9bb8-42d2025a8990",
+      "heater"
+    ],
+    [
+      "8c9c0610-171c-400e-9c4b-2f5d13308894",
+      "heater1"
+    ],
+    [
+      "fefe13c8-ea09-44e5-b3b2-75f5b3b830ad",
+      "heater2"
+    ],
+    [
+      "e336b6c7-81e1-4d3d-a643-cb853dad8960",
+      "heater3"
+    ],
+    [
+      "d9f2d6dc-11f0-454e-8b00-5ddbdaa1f127",
+      "heater4"
+    ],
+    [
+      "23210e4c-9591-4ed1-84ae-02607ea53017",
+      "heater5"
+    ],
+    [
+      "2c4ea1c9-bf32-4a95-a9fd-6cc16863d199",
+      "heater6"
+    ],
+    [
+      "72ac2519-1899-4754-bb38-e92c398f5f83",
+      "heater7"
+    ],
+    [
+      "b054d747-24ff-43b1-8913-2912144b5af7",
+      "heater8"
+    ],
+    [
+      "46b4c80d-5be7-4fec-8046-bb1c6237dbbc",
+      "heater9"
+    ],
+    [
+      "7c4d034e-ab74-4c5c-be5d-9c5e8eb64760",
+      "heater10"
+    ],
+    [
+      "0180458b-6bd9-4355-906a-2f4f08bc0a29",
+      "heater11"
+    ],
+    [
+      "4d17cd5e-b16e-44dc-92f0-e7523c14ee0f",
+      "heater12"
+    ],
+    [
+      "65ff4518-9e06-4ac3-8818-3a39ce2f7d24",
+      "heater13"
+    ],
+    [
+      "fc21d6ee-3ca0-47c2-9222-79f26b724a7e",
+      "heater14"
+    ],
+    [
+      "4b41cf9f-5a8c-4fb7-8691-37e723720167",
+      "heater15"
+    ],
+    [
+      "c73dcb47-55c9-41f7-98c5-7a2af5889991",
+      "heater16"
+    ],
+    [
+      "cb7b4fd6-563a-4851-b314-7c157051d0c3",
+      "heater17"
+    ],
+    [
+      "be4be857-a7be-4a67-94a2-31b4ff18a540",
+      "heater18"
+    ],
+    [
+      "963d2c90-75cf-46ba-b7f7-1817d0e9fa0b",
+      "heater19"
+    ],
+    [
+      "d54a15bb-eef7-4ded-b3d5-53a4dc57b2ba",
+      "heater20"
+    ],
+    [
+      "169b8de4-2dc8-4b6e-893b-c7f252eede72",
+      "heater21"
+    ],
+    [
+      "a38d1719-52b0-46e0-9b7d-12edc0f2f1e9",
+      "heater22"
+    ],
+    [
+      "db5a26d3-ad3c-4a3a-ba70-6276d030512e",
+      "heater23"
+    ],
+    [
+      "0eb7924e-8669-45db-bb8b-78cc920c18b1",
+      "heater24"
     ]
   ],
   "text_variables": {},
