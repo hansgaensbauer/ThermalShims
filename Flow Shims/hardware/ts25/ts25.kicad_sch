@@ -5,61 +5,35 @@
 	(uuid "3dc0b02f-b3ef-4802-aefc-df594c408bbd")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Amplifier_Operational:OPA196xDBV"
-			(pin_names
-				(offset 0.127)
-			)
+		(symbol "Amplifier_Operational:OPA2196xDGK"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U"
-				(at -1.27 6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "OPA196xDBV"
-				(at -1.27 3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-				(at -2.54 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/opa4196.pdf"
 				(at 0 5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
-				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Description" "Single, Low-Power, Low Offset Voltage, Rail-to-Rail Operational Amplifier, SOT-23-5"
+			(property "Value" "OPA2196xDGK"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -70,7 +44,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "single opamp"
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/opa4196.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -81,7 +55,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "SOT?23*"
+			(property "Description" "Dual, Low-Power, Low Offset Voltage, Rail-to-Rail Operational Amplifier, VSSOP-8"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -92,7 +66,39 @@
 					)
 				)
 			)
-			(symbol "OPA196xDBV_0_1"
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "dual opamp rtor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "VSSOP*3x3mm*P0.65mm*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "OPA2196xDGK_1_1"
 				(polyline
 					(pts
 						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
@@ -105,44 +111,6 @@
 						(type background)
 					)
 				)
-				(pin power_in line
-					(at -2.54 -7.62 90)
-					(length 3.81)
-					(name "V-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -2.54 7.62 270)
-					(length 3.81)
-					(name "V+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "OPA196xDBV_1_1"
 				(pin output line
 					(at 7.62 0 180)
 					(length 2.54)
@@ -154,6 +122,24 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -179,6 +165,38 @@
 						)
 					)
 				)
+			)
+			(symbol "OPA2196xDGK_2_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin input line
 					(at -7.62 -2.54 0)
 					(length 2.54)
@@ -189,7 +207,63 @@
 							)
 						)
 					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "OPA2196xDGK_3_1"
+				(pin power_in line
+					(at -2.54 -7.62 90)
+					(length 3.81)
+					(name "V-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
 					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 7.62 270)
+					(length 3.81)
+					(name "V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2936,16 +3010,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 121.92) (xy 86.36 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "21df0e51-cc70-454c-bf8c-3c1e17562e08")
-	)
-	(wire
-		(pts
 			(xy 133.35 87.63) (xy 133.35 88.9)
 		)
 		(stroke
@@ -2993,16 +3057,6 @@
 			(type default)
 		)
 		(uuid "28af5d24-26cc-46a9-ae93-bdfb0f65b93a")
-	)
-	(wire
-		(pts
-			(xy 93.98 116.84) (xy 93.98 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "28edcfe5-6c87-4ec0-a6b4-f204d2155619")
 	)
 	(wire
 		(pts
@@ -3746,16 +3800,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 116.84) (xy 86.36 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a6adfbb1-cf08-49a2-ac53-845dfa67c980")
-	)
-	(wire
-		(pts
 			(xy 146.05 130.81) (xy 148.59 130.81)
 		)
 		(stroke
@@ -4033,16 +4077,6 @@
 			(type default)
 		)
 		(uuid "cd4d8d41-4409-443d-88d2-50db099bf427")
-	)
-	(wire
-		(pts
-			(xy 93.98 121.92) (xy 93.98 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ce5c7f6f-cda8-4628-98a9-0b0ffe07301a")
 	)
 	(wire
 		(pts
@@ -5005,86 +5039,6 @@
 		(uuid "f90c3728-80c3-461f-a8c6-0d87048a004a")
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 93.98 119.38 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "0596db4f-eb96-405b-b83d-3f4567baa6b3")
-		(property "Reference" "C58"
-			(at 99.568 117.602 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100n"
-			(at 99.568 120.142 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 93.98 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 93.98 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 93.98 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "fa9cf111-d6b3-4b68-bca0-c665350f27fa")
-		)
-		(pin "2"
-			(uuid "6ce37a4b-4bdf-4772-9aa8-64c5067d5450")
-		)
-		(instances
-			(project "ts25"
-				(path "/3dc0b02f-b3ef-4802-aefc-df594c408bbd"
-					(reference "C58")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
 		(at 34.29 147.32 0)
 		(unit 1)
@@ -5357,10 +5311,9 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 93.98 123.19 0)
-		(mirror y)
-		(unit 1)
+		(lib_id "Amplifier_Operational:OPA2196xDGK")
+		(at 88.9 38.1 0)
+		(unit 3)
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5368,9 +5321,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "1629d875-11b4-44cc-aa0a-5e5305f08c4f")
-		(property "Reference" "#PWR0256"
-			(at 93.98 129.54 0)
+		(uuid "165e991c-f243-4902-b946-c24ef86a763b")
+		(property "Reference" "U28"
+			(at 87.63 36.8299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "OPA2196xDGK"
+			(at 87.63 39.3699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm"
+			(at 88.9 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5380,8 +5355,86 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 93.98 128.27 0)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/opa4196.pdf"
+			(at 88.9 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Dual, Low-Power, Low Offset Voltage, Rail-to-Rail Operational Amplifier, VSSOP-8"
+			(at 88.9 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "8"
+			(uuid "1c69d06e-fc78-4017-9f48-68c88faa67e0")
+		)
+		(pin "4"
+			(uuid "8cb810c1-9472-4259-80d0-e74bfb3eccea")
+		)
+		(pin "6"
+			(uuid "fc743b44-8edd-4ece-8744-d198f991ea7f")
+		)
+		(pin "7"
+			(uuid "1ce2066e-a6af-48c1-bc5a-8a4c747fe79d")
+		)
+		(pin "1"
+			(uuid "5e865384-e653-4018-b411-9812c4771383")
+		)
+		(pin "2"
+			(uuid "e56f7de2-fea8-4626-8cf3-859baed83b27")
+		)
+		(pin "5"
+			(uuid "a8709cf9-000d-44ad-9b80-c5e10c43573c")
+		)
+		(pin "3"
+			(uuid "2291609e-d5e3-40b8-8e17-75e7d1ed16df")
+		)
+		(instances
+			(project "ts25"
+				(path "/3dc0b02f-b3ef-4802-aefc-df594c408bbd"
+					(reference "U28")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:-15V")
+		(at 86.36 45.72 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "17dbcbfa-4f0e-4bcc-8da3-f43cdedc5d9b")
+		(property "Reference" "#PWR0255"
+			(at 86.36 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "-15V"
+			(at 86.36 50.8 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5391,7 +5444,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 93.98 123.19 0)
+			(at 86.36 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5402,7 +5455,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 93.98 123.19 0)
+			(at 86.36 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5412,8 +5465,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 93.98 123.19 0)
+		(property "Description" "Power symbol creates a global label with name \"-15V\""
+			(at 86.36 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5424,12 +5477,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "5fcd0025-b3ce-461d-944a-ad6fd732d29e")
+			(uuid "177a5186-8513-4194-ad7a-feba85723d09")
 		)
 		(instances
 			(project "ts25"
 				(path "/3dc0b02f-b3ef-4802-aefc-df594c408bbd"
-					(reference "#PWR0256")
+					(reference "#PWR0255")
 					(unit 1)
 				)
 			)
@@ -5510,84 +5563,6 @@
 			(project "ts25"
 				(path "/3dc0b02f-b3ef-4802-aefc-df594c408bbd"
 					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+15V")
-		(at 38.1 71.12 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1fb01ccd-606c-4e6e-b194-2928f46f2515")
-		(property "Reference" "#PWR0246"
-			(at 38.1 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+15V"
-			(at 38.1 66.04 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 38.1 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 38.1 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+15V\""
-			(at 38.1 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2154e8e2-4e84-4a35-af7c-645519ed3285")
-		)
-		(instances
-			(project "ts25"
-				(path "/3dc0b02f-b3ef-4802-aefc-df594c408bbd"
-					(reference "#PWR0246")
 					(unit 1)
 				)
 			)
@@ -5937,7 +5912,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 124.46 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -6141,97 +6116,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:OPA196xDBV")
-		(at 78.74 99.06 0)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "32645a42-1c34-402c-ac71-205cac8cddd4")
-		(property "Reference" "U79"
-			(at 91.44 105.4802 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "OPA196xDBV"
-			(at 91.44 102.9402 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 76.2 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/opa4196.pdf"
-			(at 78.74 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Single, Low-Power, Low Offset Voltage, Rail-to-Rail Operational Amplifier, SOT-23-5"
-			(at 78.74 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "f00dd0e7-8c4b-4758-bb53-405b70ee42d5")
-		)
-		(pin "4"
-			(uuid "11227b75-b8c8-477c-ac2e-f0656263d769")
-		)
-		(pin "3"
-			(uuid "36a328b1-0864-45bd-9d93-2341027befb6")
-		)
-		(pin "1"
-			(uuid "688b7663-cf0c-4bfc-acc9-a8372bd11031")
-		)
-		(pin "5"
-			(uuid "903e803c-c55f-4da1-adac-4dde9b1a36a0")
-		)
-		(instances
-			(project "ts25"
-				(path "/3dc0b02f-b3ef-4802-aefc-df594c408bbd"
-					(reference "U79")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 60.96 78.74 90)
 		(unit 1)
@@ -6383,84 +6267,6 @@
 			(project "ts25"
 				(path "/3dc0b02f-b3ef-4802-aefc-df594c408bbd"
 					(reference "#PWR0247")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:-15V")
-		(at 93.98 115.57 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3c84cbb1-fd1d-46f3-aede-7aeaa0df17e7")
-		(property "Reference" "#PWR0255"
-			(at 93.98 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "-15V"
-			(at 93.98 110.49 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 93.98 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 93.98 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"-15V\""
-			(at 93.98 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8997ed88-f4a8-4648-b04a-05a123a67d8a")
-		)
-		(instances
-			(project "ts25"
-				(path "/3dc0b02f-b3ef-4802-aefc-df594c408bbd"
-					(reference "#PWR0255")
 					(unit 1)
 				)
 			)
@@ -6702,95 +6508,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:OPA196xDBV")
-		(at 40.64 78.74 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "501fb9dd-d28f-470c-81ef-b454bdc5de9f")
-		(property "Reference" "U78"
-			(at 47.498 72.39 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "OPA196xDBV"
-			(at 47.498 74.93 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 38.1 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/opa4196.pdf"
-			(at 40.64 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Single, Low-Power, Low Offset Voltage, Rail-to-Rail Operational Amplifier, SOT-23-5"
-			(at 40.64 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "4277fcdd-802e-4da2-9d60-1cae36596506")
-		)
-		(pin "4"
-			(uuid "29a13e9e-da39-4459-b344-eeddd887721d")
-		)
-		(pin "3"
-			(uuid "ae57c3fd-b73d-4421-b51d-e6dd12e7033a")
-		)
-		(pin "1"
-			(uuid "87c09421-3369-416c-aa51-204bc0318bfd")
-		)
-		(pin "5"
-			(uuid "72672be9-77a0-4d11-823d-40b4c9dddc80")
-		)
-		(instances
-			(project "ts25"
-				(path "/3dc0b02f-b3ef-4802-aefc-df594c408bbd"
-					(reference "U78")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 67.31 114.3 0)
 		(unit 1)
@@ -6863,85 +6580,6 @@
 			(project "ts25"
 				(path "/3dc0b02f-b3ef-4802-aefc-df594c408bbd"
 					(reference "#PWR0248")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+15V")
-		(at 86.36 115.57 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "578f9aca-d2a1-4a03-8056-47a39b04d4c8")
-		(property "Reference" "#PWR0249"
-			(at 86.36 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+15V"
-			(at 86.36 110.49 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 86.36 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 86.36 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+15V\""
-			(at 86.36 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b809d2d3-da96-4f4b-87de-fb6460c2bc2e")
-		)
-		(instances
-			(project "ts25"
-				(path "/3dc0b02f-b3ef-4802-aefc-df594c408bbd"
-					(reference "#PWR0249")
 					(unit 1)
 				)
 			)
@@ -7106,84 +6744,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:-15V")
-		(at 38.1 86.36 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "67a8d48b-a044-442c-99a6-4d710f3192c1")
-		(property "Reference" "#PWR0243"
-			(at 38.1 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "-15V"
-			(at 38.1 91.44 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 38.1 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 38.1 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"-15V\""
-			(at 38.1 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3ce95f6c-f5ad-45f4-aa76-9a6a9c177534")
-		)
-		(instances
-			(project "ts25"
-				(path "/3dc0b02f-b3ef-4802-aefc-df594c408bbd"
-					(reference "#PWR0243")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 120.65 33.02 0)
 		(unit 1)
@@ -7263,8 +6823,8 @@
 	)
 	(symbol
 		(lib_id "power:+15V")
-		(at 76.2 106.68 0)
-		(mirror x)
+		(at 86.36 30.48 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7273,9 +6833,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "71e505a6-8f75-430e-b6be-78a8a3e7b96c")
-		(property "Reference" "#PWR0245"
-			(at 76.2 102.87 0)
+		(uuid "6b941f06-d91f-403d-a443-aae205e137ae")
+		(property "Reference" "#PWR0256"
+			(at 86.36 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7286,7 +6846,7 @@
 			)
 		)
 		(property "Value" "+15V"
-			(at 76.2 111.76 0)
+			(at 86.36 25.4 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7296,7 +6856,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 76.2 106.68 0)
+			(at 86.36 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7307,7 +6867,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 76.2 106.68 0)
+			(at 86.36 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7318,7 +6878,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+15V\""
-			(at 76.2 106.68 0)
+			(at 86.36 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7329,12 +6889,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "1533102c-76a0-4bf3-ab86-4d8bdf9f745f")
+			(uuid "bba3e75d-0bca-43b1-ae85-0ee83d70c935")
 		)
 		(instances
 			(project "ts25"
 				(path "/3dc0b02f-b3ef-4802-aefc-df594c408bbd"
-					(reference "#PWR0245")
+					(reference "#PWR0256")
 					(unit 1)
 				)
 			)
@@ -7921,7 +7481,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 127 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -8478,85 +8038,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 86.36 119.38 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b4ac7c3c-3003-49a6-b55c-a2b22bc9af0c")
-		(property "Reference" "C55"
-			(at 80.772 117.602 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100n"
-			(at 80.772 120.142 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 86.36 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 86.36 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 86.36 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4aad94f6-1c6c-434b-8d06-cb44e06c846c")
-		)
-		(pin "2"
-			(uuid "aa222ea9-12b5-413c-9fe8-168ea632550f")
-		)
-		(instances
-			(project "ts25"
-				(path "/3dc0b02f-b3ef-4802-aefc-df594c408bbd"
-					(reference "C55")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 34.29 151.13 90)
 		(unit 1)
@@ -8630,85 +8111,6 @@
 			(project "ts25"
 				(path "/3dc0b02f-b3ef-4802-aefc-df594c408bbd"
 					(reference "#FLG02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:-15V")
-		(at 76.2 91.44 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b71a1968-a70f-4535-a53a-66c7321802f3")
-		(property "Reference" "#PWR0244"
-			(at 76.2 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "-15V"
-			(at 76.2 86.36 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 76.2 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 76.2 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"-15V\""
-			(at 76.2 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "06b6b0ed-fa70-46b1-a9c3-e0fa9d0db86e")
-		)
-		(instances
-			(project "ts25"
-				(path "/3dc0b02f-b3ef-4802-aefc-df594c408bbd"
-					(reference "#PWR0244")
 					(unit 1)
 				)
 			)
@@ -8824,7 +8226,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 48.26 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -9139,7 +8541,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 127 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -9260,6 +8662,104 @@
 			(project "ts25"
 				(path "/3dc0b02f-b3ef-4802-aefc-df594c408bbd"
 					(reference "#PWR0112")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:OPA2196xDGK")
+		(at 40.64 78.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d2474712-fba8-4ed2-9beb-fa5fcb1bb613")
+		(property "Reference" "U28"
+			(at 40.64 68.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "OPA2196xDGK"
+			(at 40.64 71.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm"
+			(at 40.64 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/opa4196.pdf"
+			(at 40.64 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Dual, Low-Power, Low Offset Voltage, Rail-to-Rail Operational Amplifier, VSSOP-8"
+			(at 40.64 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "8"
+			(uuid "1c69d06e-fc78-4017-9f48-68c88faa67e0")
+		)
+		(pin "4"
+			(uuid "8cb810c1-9472-4259-80d0-e74bfb3eccea")
+		)
+		(pin "6"
+			(uuid "fc743b44-8edd-4ece-8744-d198f991ea7f")
+		)
+		(pin "7"
+			(uuid "1ce2066e-a6af-48c1-bc5a-8a4c747fe79d")
+		)
+		(pin "1"
+			(uuid "5e865384-e653-4018-b411-9812c4771383")
+		)
+		(pin "2"
+			(uuid "e56f7de2-fea8-4626-8cf3-859baed83b27")
+		)
+		(pin "5"
+			(uuid "a8709cf9-000d-44ad-9b80-c5e10c43573c")
+		)
+		(pin "3"
+			(uuid "2291609e-d5e3-40b8-8e17-75e7d1ed16df")
+		)
+		(instances
+			(project "ts25"
+				(path "/3dc0b02f-b3ef-4802-aefc-df594c408bbd"
+					(reference "U28")
 					(unit 1)
 				)
 			)
@@ -9424,6 +8924,104 @@
 		)
 	)
 	(symbol
+		(lib_id "Amplifier_Operational:OPA2196xDGK")
+		(at 78.74 99.06 0)
+		(mirror x)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "dbda02f6-6c41-4b85-92ca-abe5fe033f16")
+		(property "Reference" "U28"
+			(at 78.74 109.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "OPA2196xDGK"
+			(at 78.74 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm"
+			(at 78.74 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/opa4196.pdf"
+			(at 78.74 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Dual, Low-Power, Low Offset Voltage, Rail-to-Rail Operational Amplifier, VSSOP-8"
+			(at 78.74 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "8"
+			(uuid "1c69d06e-fc78-4017-9f48-68c88faa67e0")
+		)
+		(pin "4"
+			(uuid "8cb810c1-9472-4259-80d0-e74bfb3eccea")
+		)
+		(pin "6"
+			(uuid "fc743b44-8edd-4ece-8744-d198f991ea7f")
+		)
+		(pin "7"
+			(uuid "1ce2066e-a6af-48c1-bc5a-8a4c747fe79d")
+		)
+		(pin "1"
+			(uuid "5e865384-e653-4018-b411-9812c4771383")
+		)
+		(pin "2"
+			(uuid "e56f7de2-fea8-4626-8cf3-859baed83b27")
+		)
+		(pin "5"
+			(uuid "a8709cf9-000d-44ad-9b80-c5e10c43573c")
+		)
+		(pin "3"
+			(uuid "2291609e-d5e3-40b8-8e17-75e7d1ed16df")
+		)
+		(instances
+			(project "ts25"
+				(path "/3dc0b02f-b3ef-4802-aefc-df594c408bbd"
+					(reference "U28")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 123.19 90.17 0)
 		(unit 1)
@@ -9496,84 +9094,6 @@
 			(project "ts25"
 				(path "/3dc0b02f-b3ef-4802-aefc-df594c408bbd"
 					(reference "#PWR0109")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 86.36 123.19 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e1fee8b8-62de-4793-bccc-eaa3069409a4")
-		(property "Reference" "#PWR0250"
-			(at 86.36 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 86.36 128.27 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 86.36 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 86.36 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 86.36 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "81342182-cc20-4b97-9e62-1ca2d146a4c0")
-		)
-		(instances
-			(project "ts25"
-				(path "/3dc0b02f-b3ef-4802-aefc-df594c408bbd"
-					(reference "#PWR0250")
 					(unit 1)
 				)
 			)
@@ -9690,7 +9210,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 124.46 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -9847,7 +9367,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 41.91 118.11 0)
 			(hide yes)
 			(show_name no)
