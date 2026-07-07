@@ -27,6 +27,11 @@ void tmp11826_init(){
 	ONEWIRE_PORT->BSRR = ONEWIRE_PIN_SETHIGH; //Write output HIGH
 }
 
+//TODO
+void read_all_temps(int16_t* sensor_temps){
+
+}
+
 uint16_t tmp11826_get_temp(uint8_t sensor_index){
 	uint64_t address = device_addresses[sensor_index];
 	onewire_bus_reset();

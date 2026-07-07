@@ -45,6 +45,7 @@
 extern TIM_HandleTypeDef htim6;
 #define US_DELAY_TIM htim6;
 
+void read_all_temps(int16_t* sensor_temps);
 void onewire_write_bit(char bit);
 uint8_t onewire_read_bit();
 uint8_t onewire_read_byte();

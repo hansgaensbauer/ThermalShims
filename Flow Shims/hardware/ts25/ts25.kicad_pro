@@ -132,7 +132,7 @@
         "max_error": 0.005,
         "min_clearance": 0.0,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.0,
+        "min_copper_edge_clearance": 0.2,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.2,
         "min_hole_to_hole": 0.25,
@@ -571,19 +571,19 @@
           "group_by": true,
           "label": "DNP",
           "name": "${DNP}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "Exclude from BOM",
           "name": "${EXCLUDE_FROM_BOM}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "Exclude from Board",
           "name": "${EXCLUDE_FROM_BOARD}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
@@ -658,7 +658,7 @@
         "uuid": "3dc0b02f-b3ef-4802-aefc-df594c408bbd"
       }
     ],
-    "used_designators": "C55-58,TP2-5,R2-7,#PWR106,#PWR117,#PWR121-122,#PWR126-127,#PWR131-132,#PWR136-137,#PWR143-144,#PWR148-149,#PWR153-154,#PWR158-159,#PWR163-164,#PWR168-169,#PWR173-174,#PWR178-179,#PWR183-184,#PWR188-189,#PWR193-194,#PWR198-199,#PWR203-204,#PWR208-209,#PWR213-214,#PWR218-219,#PWR223-224,#PWR228-229,#PWR233-234,#PWR238-239,#PWR242-256,U28,U53-79",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [

@@ -2666,6 +2666,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Check Cap Voltage!"
+		(exclude_from_sim no)
+		(at 44.704 130.556 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "7fc136f1-1c6e-4554-956e-43b5e04ca26c")
+	)
 	(junction
 		(at 147.32 41.91)
 		(diameter 0)
@@ -8733,28 +8743,28 @@
 			)
 		)
 		(pin "8"
-			(uuid "1c69d06e-fc78-4017-9f48-68c88faa67e0")
+			(uuid "1c69d06e-fc78-4017-9f48-68c88faa67e1")
 		)
 		(pin "4"
-			(uuid "8cb810c1-9472-4259-80d0-e74bfb3eccea")
+			(uuid "8cb810c1-9472-4259-80d0-e74bfb3ecceb")
 		)
 		(pin "6"
-			(uuid "fc743b44-8edd-4ece-8744-d198f991ea7f")
+			(uuid "fc743b44-8edd-4ece-8744-d198f991ea80")
 		)
 		(pin "7"
-			(uuid "1ce2066e-a6af-48c1-bc5a-8a4c747fe79d")
+			(uuid "1ce2066e-a6af-48c1-bc5a-8a4c747fe79e")
 		)
 		(pin "1"
-			(uuid "5e865384-e653-4018-b411-9812c4771383")
+			(uuid "5e865384-e653-4018-b411-9812c4771384")
 		)
 		(pin "2"
-			(uuid "e56f7de2-fea8-4626-8cf3-859baed83b27")
+			(uuid "e56f7de2-fea8-4626-8cf3-859baed83b28")
 		)
 		(pin "5"
-			(uuid "a8709cf9-000d-44ad-9b80-c5e10c43573c")
+			(uuid "a8709cf9-000d-44ad-9b80-c5e10c43573d")
 		)
 		(pin "3"
-			(uuid "2291609e-d5e3-40b8-8e17-75e7d1ed16df")
+			(uuid "2291609e-d5e3-40b8-8e17-75e7d1ed16e0")
 		)
 		(instances
 			(project "ts25"
@@ -8989,28 +8999,28 @@
 			)
 		)
 		(pin "8"
-			(uuid "1c69d06e-fc78-4017-9f48-68c88faa67e0")
+			(uuid "1c69d06e-fc78-4017-9f48-68c88faa67e2")
 		)
 		(pin "4"
-			(uuid "8cb810c1-9472-4259-80d0-e74bfb3eccea")
+			(uuid "8cb810c1-9472-4259-80d0-e74bfb3eccec")
 		)
 		(pin "6"
-			(uuid "fc743b44-8edd-4ece-8744-d198f991ea7f")
+			(uuid "fc743b44-8edd-4ece-8744-d198f991ea81")
 		)
 		(pin "7"
-			(uuid "1ce2066e-a6af-48c1-bc5a-8a4c747fe79d")
+			(uuid "1ce2066e-a6af-48c1-bc5a-8a4c747fe79f")
 		)
 		(pin "1"
-			(uuid "5e865384-e653-4018-b411-9812c4771383")
+			(uuid "5e865384-e653-4018-b411-9812c4771385")
 		)
 		(pin "2"
-			(uuid "e56f7de2-fea8-4626-8cf3-859baed83b27")
+			(uuid "e56f7de2-fea8-4626-8cf3-859baed83b29")
 		)
 		(pin "5"
-			(uuid "a8709cf9-000d-44ad-9b80-c5e10c43573c")
+			(uuid "a8709cf9-000d-44ad-9b80-c5e10c43573e")
 		)
 		(pin "3"
-			(uuid "2291609e-d5e3-40b8-8e17-75e7d1ed16df")
+			(uuid "2291609e-d5e3-40b8-8e17-75e7d1ed16e1")
 		)
 		(instances
 			(project "ts25"
