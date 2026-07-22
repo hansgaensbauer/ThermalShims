@@ -59,8 +59,26 @@ void debug_printf(const char *fmt, ...);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define A1_Pin GPIO_PIN_1
+#define A1_GPIO_Port GPIOA
+#define A0_Pin GPIO_PIN_3
+#define A0_GPIO_Port GPIOA
+#define A2_Pin GPIO_PIN_5
+#define A2_GPIO_Port GPIOA
+#define A3_Pin GPIO_PIN_6
+#define A3_GPIO_Port GPIOA
+#define VD_EN_Pin GPIO_PIN_7
+#define VD_EN_GPIO_Port GPIOA
+#define EN0_1_Pin GPIO_PIN_0
+#define EN0_1_GPIO_Port GPIOB
+#define EN1_1_Pin GPIO_PIN_1
+#define EN1_1_GPIO_Port GPIOB
+#define EN0_0_Pin GPIO_PIN_8
+#define EN0_0_GPIO_Port GPIOA
 #define VTEMP_Pin GPIO_PIN_9
 #define VTEMP_GPIO_Port GPIOA
+#define EN1_0_Pin GPIO_PIN_10
+#define EN1_0_GPIO_Port GPIOA
 #define LED1_Pin GPIO_PIN_5
 #define LED1_GPIO_Port GPIOB
 #define LED2_Pin GPIO_PIN_6

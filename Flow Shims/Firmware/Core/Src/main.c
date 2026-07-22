@@ -27,6 +27,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "tmp11826.h"
+#include "heat_driver.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -50,6 +51,8 @@ DAC_HandleTypeDef hdac;
 TIM_HandleTypeDef htim6;
 
 /* USER CODE BEGIN PV */
+
+int htemps[25];
 
 /* USER CODE END PV */
 
@@ -102,10 +105,13 @@ int main(void)
   /* USER CODE BEGIN 2 */
   HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, GPIO_PIN_SET);
   HAL_GPIO_WritePin(VTEMP_GPIO_Port, VTEMP_Pin, GPIO_PIN_SET);
-  tmp11826_init();
-  HAL_Delay(1000);
-  onewire_search();
-//  onewire_search();
+//  tmp11826_init();
+  HAL_DAC_Start(&hdac,DAC_CHANNEL_1);
+  int num_devices = onewire_search();
+
+  init_heater_driver();
+  array_off();
+  enable_vd();
 
   /* USER CODE END 2 */
 
@@ -116,6 +122,15 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	  HAL_Delay(1000);
+//	  enable_vd();
+//	  HAL_Delay(1000);
+//	  disable_vd();
+//	  array_off();
+//	  HAL_Delay(1000);
+//	  array_on();
+//	  HAL_Delay(1000);
+	  set_heater(26, 2500);
   }
   /* USER CODE END 3 */
 }
@@ -263,10 +278,30 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(VTEMP_GPIO_Port, VTEMP_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(GPIOA, A1_Pin|A0_Pin|A2_Pin|A3_Pin
+                          |VD_EN_Pin|EN0_0_Pin|EN1_0_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, LED1_Pin|LED2_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, EN0_1_Pin|EN1_1_Pin|LED1_Pin|LED2_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(VTEMP_GPIO_Port, VTEMP_Pin, GPIO_PIN_SET);
+
+  /*Configure GPIO pins : A1_Pin A0_Pin A2_Pin A3_Pin
+                           VD_EN_Pin EN0_0_Pin EN1_0_Pin */
+  GPIO_InitStruct.Pin = A1_Pin|A0_Pin|A2_Pin|A3_Pin
+                          |VD_EN_Pin|EN0_0_Pin|EN1_0_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : EN0_1_Pin EN1_1_Pin LED1_Pin LED2_Pin */
+  GPIO_InitStruct.Pin = EN0_1_Pin|EN1_1_Pin|LED1_Pin|LED2_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /*Configure GPIO pin : VTEMP_Pin */
   GPIO_InitStruct.Pin = VTEMP_Pin;
@@ -274,13 +309,6 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_PULLUP;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(VTEMP_GPIO_Port, &GPIO_InitStruct);
-
-  /*Configure GPIO pins : LED1_Pin LED2_Pin */
-  GPIO_InitStruct.Pin = LED1_Pin|LED2_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /* USER CODE BEGIN MX_GPIO_Init_2 */
 

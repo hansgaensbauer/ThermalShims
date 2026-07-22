@@ -28,11 +28,13 @@ void tmp11826_init(){
 }
 
 //TODO
-void read_all_temps(int16_t* sensor_temps){
-
+void read_all_temps(int* sensor_temps){
+  for(int i = 0; i < num_devices; i++){
+	  sensor_temps[i] = tmp11826_get_temp(i);
+  }
 }
 
-uint16_t tmp11826_get_temp(uint8_t sensor_index){
+int tmp11826_get_temp(uint8_t sensor_index){
 	uint64_t address = device_addresses[sensor_index];
 	onewire_bus_reset();
 	//SKIPADDR
@@ -62,7 +64,8 @@ uint16_t tmp11826_get_temp(uint8_t sensor_index){
 	onewire_bus_reset();
 
 	//return temp
-	return byte_high << 8 | byte_low;
+	int tmp = (((int16_t) byte_high << 8 | byte_low) * 625) / 100;
+	return tmp;
 }
 
 void onewire_write_bit(char bit){
@@ -105,7 +108,7 @@ void onewire_write_byte(uint8_t byte){
 }
 
 void onewire_bus_reset(){
-	debug_printf("Resetting Bus.\n\r");
+//	debug_printf("Resetting Bus.\n\r");
 	ONEWIRE_PORT->BSRR = ONEWIRE_PIN_SETLOW; //output low
 	DELAY_TRSTL
 	ONEWIRE_PORT->BSRR = ONEWIRE_PIN_SETHIGH; //output low

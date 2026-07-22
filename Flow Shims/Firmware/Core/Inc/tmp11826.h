@@ -45,7 +45,7 @@
 extern TIM_HandleTypeDef htim6;
 #define US_DELAY_TIM htim6;
 
-void read_all_temps(int16_t* sensor_temps);
+void read_all_temps(int* sensor_temps);
 void onewire_write_bit(char bit);
 uint8_t onewire_read_bit();
 uint8_t onewire_read_byte();
@@ -54,7 +54,7 @@ void delay_us(uint16_t us);
 void tmp11826_init();
 void disable_fast_arbitration();
 void enable_fast_arbitration();
-uint16_t tmp11826_get_temp(uint8_t sensor_index);
+int tmp11826_get_temp(uint8_t sensor_index);
 void onewire_bus_reset();
 uint8_t onewire_search_pass(uint64_t* addr);
 uint8_t onewire_search();
