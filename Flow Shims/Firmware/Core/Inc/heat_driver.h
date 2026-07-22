@@ -13,9 +13,9 @@
 #define NUM_HEATERS 50
 
 //Constants are scaled up by 8 (1 -> 1/8)
-#define P 1
-#define I 1
-#define D 1
+#define P 400
+#define I 0
+#define D 0
 
 #define A0P 3
 #define A1P 1

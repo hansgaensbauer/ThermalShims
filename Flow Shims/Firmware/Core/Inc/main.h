@@ -55,6 +55,7 @@ void Error_Handler(void);
 /* USER CODE BEGIN EFP */
 
 void debug_printf(const char *fmt, ...);
+void find_sensor(uint8_t element);
 
 /* USER CODE END EFP */
 

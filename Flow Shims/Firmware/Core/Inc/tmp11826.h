@@ -13,7 +13,7 @@
 #define USE_STANDARD_MODE
 
 #define DEVICE_FCLK_MHZ 16
-#define MAX_DEVICES 32
+#define MAX_DEVICES 64
 
 #define ONEWIRE_PORT GPIOA
 #define ONEWIRE_PIN_OFFSET 9
@@ -45,7 +45,7 @@
 extern TIM_HandleTypeDef htim6;
 #define US_DELAY_TIM htim6;
 
-void read_all_temps(int* sensor_temps);
+void read_all_temps(int16_t* sensor_temps);
 void onewire_write_bit(char bit);
 uint8_t onewire_read_bit();
 uint8_t onewire_read_byte();

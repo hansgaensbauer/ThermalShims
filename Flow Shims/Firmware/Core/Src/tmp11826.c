@@ -16,8 +16,64 @@
 
 #include "main.h"
 
-uint64_t device_addresses[MAX_DEVICES];
-uint8_t num_devices = 0;
+const uint8_t sensor_map[50] = {
+		30,40,4,17,25,38,43,44,27,39,32,36,13,9,12,49,1,47,31,24,41,21,10,29,5,
+		45,2,23,19,8,20,11,7,14,50,46,6,35,33,22,16,42,37,34,18,26,3,28,48,15
+};
+
+const uint64_t device_addresses[MAX_DEVICES] = {
+		0x5d5080286a252226,
+		0x765160286a252226,
+		0xb15090286a252226,
+		0xf05f90286a252226,
+		0x2a50d0286a252226,
+		0xc45070286a252226,
+		0x2b5088286a252226,
+		0x9f5048286a252226,
+		0x5851b8286a252226,
+		0xb25078286a252226,
+		0x665084286a252226,
+		0xda5284286a252226,
+		0xd25044286a252226,
+		0x6251e4286a252226,
+		0xff5074286a252226,
+		0x10508c286a252226,
+		0x515f8c286a252226,
+		0xa4504c286a252226,
+		0x8b50cc286a252226,
+		0x42522c286a252226,
+		0x16515c286a252226,
+		0x89507c286a252226,
+		0xcc5082286a252226,
+		0xc851e2286a252226,
+		0x615f92286a252226,
+		0xbb50d2286a252226,
+		0x555072286a252226,
+		0xba508a286a252226,
+		0x06528a286a252226,
+		0xfb5f8a286a252226,
+		0x0e504a286a252226,
+		0x2150ca286a252226,
+		0x7152da286a252226,
+		0x23507a286a252226,
+		0xf75086286a252226,
+		0x4b5286286a252226,
+		0x435046286a252226,
+		0x6e5076286a252226,
+		0x81508e286a252226,
+		0xc05f8e286a252226,
+		0x1a50ce286a252226,
+		0xd3522e286a252226,
+		0x87515e286a252226,
+		0x18507e286a252226,
+		0x185020296a252226,
+		0x6b5110296a252226,
+		0x135208296a252226,
+		0x235024296a252226,
+		0xcf5206296a252226,
+		0x76513e296a252226
+};
+uint8_t num_devices = 50;
 
 void tmp11826_init(){
 	debug_printf("Initializing Temp Bus.\n\r");
@@ -28,9 +84,9 @@ void tmp11826_init(){
 }
 
 //TODO
-void read_all_temps(int* sensor_temps){
+void read_all_temps(int16_t* sensor_temps){
   for(int i = 0; i < num_devices; i++){
-	  sensor_temps[i] = tmp11826_get_temp(i);
+	  sensor_temps[i] = tmp11826_get_temp(sensor_map[i]-1);
   }
 }
 
@@ -128,9 +184,8 @@ uint8_t onewire_search_pass(uint64_t* addr){
 	*addr |= ((uint64_t) onewire_read_byte()) << 48;
 	*addr |= ((uint64_t) onewire_read_byte()) << 56;
 
-	debug_printf("Found address: %08lx%08lx\n\r",
-             (unsigned long)(*addr >> 32),
-             (unsigned long)(*addr & 0xFFFFFFFF));
+//	debug_printf("Found address: %08lx%08lx\n\r",
+
 	return *addr == 0xFFFFFFFFFFFFFFFFULL;
 }
 
@@ -149,7 +204,7 @@ void enable_fast_arbitration(){
 	onewire_write_byte(ONEWIRE_WRITE_TEMP_OFFSET_LSB);
 	onewire_write_byte(ONEWIRE_WRITE_TEMP_OFFSET_MSB);
 	uint8_t crc = onewire_read_byte(); //Read in and drop CRC
-	debug_printf("CRC: %x\n\r", crc);
+//	debug_printf("CRC: %x\n\r", crc);
 }
 
 void disable_fast_arbitration(){
@@ -167,9 +222,10 @@ void disable_fast_arbitration(){
 	onewire_write_byte(ONEWIRE_WRITE_TEMP_OFFSET_LSB);
 	onewire_write_byte(ONEWIRE_WRITE_TEMP_OFFSET_MSB);
 	uint8_t crc = onewire_read_byte(); //Read in and drop CRC
-	debug_printf("CRC: %x\n\r", crc);
+//	debug_printf("CRC: %x\n\r", crc);
 }
 
+/*
 uint8_t onewire_search(){
 
 	disable_fast_arbitration();
@@ -189,6 +245,7 @@ uint8_t onewire_search(){
 	disable_fast_arbitration();
 	return num_devices;
 }
+*/
 
 void delay_us(uint16_t us)
 {

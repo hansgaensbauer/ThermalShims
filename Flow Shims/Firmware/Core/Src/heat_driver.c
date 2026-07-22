@@ -12,15 +12,17 @@
 #include <string.h>
 #include "main.h"
 
-char heater_mask[NUM_HEATERS] = {
-		0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-		0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+int16_t setpoints[NUM_HEATERS] = {
+		3500,0,0,0,0,0,0,0,0,0,
+		0,0,0,0,0,0,0,0,0,0,
+		0,0,0,0,0,0,0,0,0,0,
+		0,0,0,0,0,0,0,0,0,0,
+		0,0,0,0,0,0,0,0,0,0
 };
-int16_t setpoints[NUM_HEATERS];
 int16_t integrals[NUM_HEATERS];
 int16_t derivatives[NUM_HEATERS];
 
-int temps[NUM_HEATERS];
+int16_t temps[NUM_HEATERS];
 int16_t new_errors[NUM_HEATERS];
 int16_t errors[NUM_HEATERS];
 uint16_t outputs[NUM_HEATERS];
@@ -55,7 +57,7 @@ void init_heater_driver(){
 
 void set_all_heaters(uint16_t * outputs){
 	for(int i = 1; i <= NUM_HEATERS; i++){
-		set_heater(i, outputs[i]);
+		set_heater(i, outputs[i-1]);
 	}
 }
 
@@ -80,10 +82,6 @@ void set_heater(uint8_t element, uint16_t output){
 				);
 	}
 
-	debug_printf("%x\n\r", SET_ADDR_PINS(address));
-	debug_printf("seten%x\n\r", SET_ENX_0_PINS(GETEN(element)));
-	debug_printf("en%x\n\r", GETEN(element));
-
 	ADDR_PORT->BSRR = SET_ADDR_PINS(address);
 
 	if(element <= 25){
@@ -107,14 +105,28 @@ void step(){
 	for(int i = 0; i < NUM_HEATERS; i++) new_errors[i] = setpoints[i] - temps[i];
 	for(int i = 0; i < NUM_HEATERS; i++) derivatives[i] = new_errors[i] - errors[i];
 	memcpy(errors, new_errors, NUM_HEATERS);
-	for(int i = 0; i < NUM_HEATERS; i++) integrals[i] = integrals[i] + errors[i];
 	for(int i = 0; i < NUM_HEATERS; i++){
-		int output = (P * errors[i] + I * integrals[i] + D * derivatives[i]) >> 8;
+		int integral = integrals[i] + errors[i];
+		if(integral >  32767) integral = 32767;
+		if(integral <-32768) integral = 32768;
+		integrals[i] =integral;
+	}
+	for(int i = 0; i < NUM_HEATERS; i++){
+		int output = (P * ((int) errors[i]) + I * ((int) integrals[i]) + D * ((int) derivatives[i])) >> 8;
 		if(output < 0) output = 0;
 		if(output > 4095) output = 4095;
 		outputs[i] = output;
 	}
+
+
 	set_all_heaters(outputs);
+
+	debug_printf("Temp: %d\t", temps[0]/10);
+	debug_printf("Error: %d\t", errors[0]);
+	debug_printf("DV: %d\t", derivatives[0]);
+
+	debug_printf("INT: %d\t", integrals[0]);
+	debug_printf("OUT: %d\t\n\r", outputs[0]);
 }
 
 

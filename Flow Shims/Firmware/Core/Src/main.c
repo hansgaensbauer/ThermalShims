@@ -105,9 +105,9 @@ int main(void)
   /* USER CODE BEGIN 2 */
   HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, GPIO_PIN_SET);
   HAL_GPIO_WritePin(VTEMP_GPIO_Port, VTEMP_Pin, GPIO_PIN_SET);
-//  tmp11826_init();
+  tmp11826_init();
   HAL_DAC_Start(&hdac,DAC_CHANNEL_1);
-  int num_devices = onewire_search();
+//  onewire_search();
 
   init_heater_driver();
   array_off();
@@ -122,15 +122,30 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	  step();
 	  HAL_Delay(1000);
-//	  enable_vd();
-//	  HAL_Delay(1000);
-//	  disable_vd();
-//	  array_off();
-//	  HAL_Delay(1000);
-//	  array_on();
-//	  HAL_Delay(1000);
-	  set_heater(26, 2500);
+
+	  /////////////////////////////////////////////
+// //Code for mapping heaters
+//	  for(int t = 0; t < 50; t++){
+//		  onewire_search();
+//		  find_sensor(t+1);
+//		  int max_temp = 0;
+//		  uint8_t max_temp_index = 0;
+//		  debug_printf("Element %d\n\r",t+1);
+//
+//		  for(int i=0; i <50; i++){
+//			  if(htemps[i] > max_temp){
+//				  max_temp = htemps[i];
+//				  max_temp_index = i;
+//			  }
+//			  debug_printf("%d, ", htemps[i]/100);
+//		  }
+//		  debug_printf("\n\r Hottest sensor: %d\n\r", max_temp_index + 1);
+//		  HAL_Delay(10000);
+//	  }
+	  ////////////////////////////////////////////////
+
   }
   /* USER CODE END 3 */
 }
@@ -330,6 +345,17 @@ void debug_printf(const char *fmt, ...) {
     }
     CDC_Transmit_FS((uint8_t *)buf, len);
 #endif
+}
+
+void find_sensor(uint8_t element) {
+	for(int i = 0; i < 15
+	; i++){
+		  HAL_Delay(1000);
+		  array_off();
+		  set_heater(element, 2500);
+	}
+
+	read_all_temps(htemps);
 }
 
 /* USER CODE END 4 */
