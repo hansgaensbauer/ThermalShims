@@ -14,7 +14,7 @@
 
 //Constants are scaled up by 8 (1 -> 1/8)
 #define P 400
-#define I 0
+#define I 40
 #define D 0
 
 #define A0P 3

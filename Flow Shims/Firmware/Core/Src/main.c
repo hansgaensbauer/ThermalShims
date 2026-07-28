@@ -52,7 +52,7 @@ TIM_HandleTypeDef htim6;
 
 /* USER CODE BEGIN PV */
 
-int htemps[25];
+int16_t htemps[50];
 
 /* USER CODE END PV */
 
@@ -122,8 +122,17 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  step();
+//	  step();
 	  HAL_Delay(1000);
+	  array_off();
+	  set_heater(13, 3500);
+//	  set_heater(14, 3500);
+//	  read_all_temps(htemps);
+//	  for(int i=0; i <50; i++){
+//		  debug_printf("%d,", htemps[i]/10);
+//	  }
+//	  debug_printf("\n\r");
+
 
 	  /////////////////////////////////////////////
 // //Code for mapping heaters
